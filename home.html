@@ -1,0 +1,15 @@
+<p attribute-directive>{{ vm.title }}</p>
+<my-first-directive title="hallo"></my-first-directive>
+
+<p>From controller: <input type="text" ng-model="vm.name" /> Name: {{ vm.name }}</p>
+
+Directive:
+<p isolated-scope-directive name="{{ vm.name }}" action=vm.setName(name)></p>
+
+<transclude-directive>hallo stukkie tekst {{ vm.name }}</transclude-directive>
+
+<starwars-directive ></starwars-directive>
+
+<country>
+    <city name="erwins"></city>
+</country>
